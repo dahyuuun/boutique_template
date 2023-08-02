@@ -27,6 +27,36 @@
   --el-wide: 2.5rem;
   --el-title: 2.5rem;
  }
+
+ /********** Common Style **********/
+ .wrapper{
+  width: 100%;
+  height: auto;
+  overflow: hidden; /* 가로스크롤 방지 */
+ }
  
+ .page-interval{
+  padding: 0 1.25rem;
+ }
+
+ .narrow-center{
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+  height: auto;
+ }
+
+ .wide-center{
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  height: auto;
+ }
+
+ .section-padding{
+  padding: var(--el-section) 0; /* 위아래 4.678rem 상하 0 */
+ }
+ 
+
  
  
