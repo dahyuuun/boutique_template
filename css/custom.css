@@ -200,4 +200,178 @@ nav .cart em{
   left: 0;
   bottom: 0;
  }
+
+ /* Best and  Latest Section Style */
+ .best .best-products-box,
+ .latest .latest-products-box{
+  display: flex;
+  column-gap: 1rem;
+ }
+
+ .best .best-product-list img,
+ .latest .latest-product-list img{
+  width: 100%;
+  transition: all .4s;
+ }
+ 
+/* 이미지를 잡고 잇는 부분은  best image이니까 그걸 컨트롤해주면 된다.*/
+
+.best .best-image,
+.latest .latest-image{
+  overflow: hidden;
+ }
+
+ .best .best-product-list:hover img,
+ .latest .latest-product-list:hover img{
+  transform: scale(1.05);
+ }
+
+ .best .best-product-info,
+ .latest .latest-product-info{
+  width: 100%;
+  text-align: center;
+  margin-top: .9375rem;
+ }
+
+ .best .best-product-info h4,
+ .latest .latest-product-info h4{
+  margin-bottom: .35rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+
+ .best .best-product-info p,
+ .latest .latest-product-info p{
+  color: #333;
+  font-size: .875rem;
+  font-weight: 400;
+ }
+ 
+ /* Latest Section not common element */
+ .latest .latest-products-box{
+  flex-wrap: wrap;
+  row-gap: 3.125rem;
+ }
+
+ .latest .latest-product-list{
+  width: calc(25% - .75rem);
+ }
+
+ /* Featured Section */
+ .featured{
+  width: 100%;
+  height: auto;
+  background: var(--color-top);
+  margin: var(--el-section) 0;
+ }
+
+ .featured .featured-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 7.5rem 0;
+ }
+
+ .featured .featured-list{
+  display: flex;
+  column-gap: .9375rem;
+  align-items: center;
+ }
+
+ .featured .featured-text p{
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 400;   
+  line-height: 150%;
+ }
+ .featured .featured-text em{
+  color: #333;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 150%;
+ }
+
+ /* Join Section Style */
+ .join{
+  width: 100%;
+  background: var(--color-hero);
+  padding: 5rem 0;
+  margin: var(--el-section)   0;
+ }
+
+ .join .wide-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .join .join-left-box,
+ .join .join-right-box{
+  width: 45%;
+ }
+
+ .join .join-left-box img{
+  width: 100%;
+ }
+
+ .join .line{
+  width: 1px;
+  height: 360px;
+  background: #ede4d2;
+ }
+
+ .join .join-right-box{
+  text-align: center;
+ }
+
+ .join .join-right-box h3{
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+ 
+ .join .join-right-box p{
+  color: #333;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+ 
+.join form{
+  margin-top:2.5rem;
+  width:100%;
+  display:flex;
+  border-bottom:1px solid #000;
+  justify-content: space-between;
+  padding:.5rem 0;
+ }
+ 
+ 
+ .join form input{
+  border:none;
+  background:none;
+  width:100%;
+  outline:0;
+ }
+ 
+ 
+ .join form button{
+  border:none;
+  background:none;
+  outline:0;
+ }
+ 
+ 
+ .join form input::placeholder{
+  color:#333;
+  font-family: 'Outfit', sans-serif;
+ }
+ 
+ 
+ 
+ 
  
