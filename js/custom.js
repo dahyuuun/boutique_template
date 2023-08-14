@@ -7,6 +7,12 @@ const btnObj = {
   bArrow: '.black', //검은색 화살표 요소
 };
 
+const swiperObj = {
+  commonBtn: '.swiper-navigation div', // 호버 요소
+  wArrow: '.arrow-white', // 흰색 화살표 요소
+  bArrow: '.arrow-black', //검은색 화살표 요소
+};
+
 // 호버 시 화살표 색상 교체 함수 정의
 function btnHoverEffect(obj) {
   const hoverBtn = document.querySelectorAll(obj.commonBtn);
@@ -27,6 +33,7 @@ function btnHoverEffect(obj) {
 }
 
 btnHoverEffect(btnObj); //함수 호출
+btnHoverEffect(swiperObj); //함수 호출 위의 함수에 알아서 적용됨!
 
 // Swiper Plugn Codes
 const swiper = new Swiper('.swiper', {
