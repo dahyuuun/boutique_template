@@ -1,0 +1,204 @@
+/* 1280px */
+@media screen and (max-width: 1280px) {
+  nav .navi{
+    order: 2;
+  }
+
+  nav .logo{
+    position: static;
+    order: 1;
+    transform: translate(0,0);
+  }
+
+  nav .cart{
+    order: 3;
+  }
+}
+
+/* 980px */
+@media screen and (max-width: 980px) {
+  .top-bar{
+    display: none;
+  }
+
+  .section-padding{
+    padding: var(--el-t-section) 0; /* 섹션과 섹션 간의 사이 간격이 조금 조절됨.*/
+  }
+
+  .title-box h2{
+    font-size: 2.5rem;
+  }
+
+  nav .menu-icon{
+    display: block;
+    /* 큰 사이즈의 화면에서는 없어졌다가 980px 이하부터는 생긴다.*/
+  }
+
+  nav .navi{
+    position: absolute;
+    top: calc(100% + 1.125rem);
+    z-index: 9999;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .4s;
+  }
+
+  nav .navi a{
+    width: 100%;
+    padding: 1rem 1.25rem;
+    display: inline-block;
+    transition: all .4s;
+  }
+
+  nav .navi a:hover{
+    background: #000;
+    color: #fff;
+  }
+
+  .hero .page-interval{
+    flex-direction: column;
+  }
+
+  .hero .page-interval > div{
+    width: 100%;
+  }
+
+  .hero .hero-text-box{
+    padding: 4.375rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero .hero-text-box h1{
+    font-size: 2.875rem;
+  }
+
+  .story .story-text{
+    font-size: 1.875rem;
+  }
+
+  .best .best-products-box,
+  .latest .latest-products-box{
+    flex-wrap: wrap;
+    row-gap: 3.125rem;
+  }
+
+  .best .best-product-list,
+  .latest .latest-product-list{
+    width: calc(33.33% - .75rem); /* 한 줄에 4개에서 3개로  1/3 */
+  }
+
+  .featured .featured-box{
+    flex-wrap: wrap;
+    padding: 3.75rem;
+    row-gap: 1.25rem;
+  }
+  
+  .featured .featured-list{
+    width: 50%;
+  }
+
+  .join .wide-center{
+    justify-content: space-evenly;
+  }
+
+  .category  .category-text h4{
+    font-size: 1.25rem;
+  }
+}
+/* End of 980 wide */
+
+
+/* 768px */
+@media screen and (max-width: 768px){
+  html, body{
+    font-size: 87.5%;
+  }
+
+  .best .best-product-list,
+  .latest .latest-product-list{
+    width: calc(50% - .5rem); /* 한 줄에 3개에서 2개로  1/2 */
+  }
+
+  .join .wide-center{
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+
+  .join .wide-center > div{
+    width: 80%;
+  }
+
+  .join .line{
+    width: 100%;
+    height: 1px;
+    max-width: 80%;
+  }
+
+  .category .category-box{
+    flex-wrap: wrap;
+    row-gap: 1.875rem;
+  }
+
+  .category .category-list{
+    width: calc(50% - .9375rem); /* row gap이 1.875/2 -> .9375rem*/
+  }
+}
+/* End of 768 wide */
+
+
+/* 480px */
+@media screen and (max-width: 480px){
+  .section-padding{
+    padding: var(--el-m-section) 0;
+  }
+
+  .title-box{
+    padding: .875rem 0;
+  }
+
+  .title-box h2{
+    font-size: 1.875rem;
+  }
+
+  .logo img{
+    width: 90px;
+  }
+  
+  .hero .hero-text-box{
+    padding: 4rem 1.25rem;
+  }
+
+  .hero .hero-text-box h1{
+    font-size: 2.125rem;
+  }
+
+  .hero .left-box > img{
+    display: none;
+  }
+
+  .story  .story-text{
+    font-size: 1.5rem;
+  }
+
+  .story  .story-right p{
+    font-size: .9375rem;
+  }
+
+  .featured .featured-box{
+    padding: 2.5rem 0;
+  }
+
+  .featured .featured-list{
+    width: 100%;
+  }
+
+  .join .wide-center > div{
+    width: 100%;
+  }
+}
+/* End of 480 wide */
